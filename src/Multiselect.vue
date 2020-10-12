@@ -101,7 +101,7 @@
             <slot name="beforeList"></slot>
             <li v-if="multiple && max === internalValue.length">
               <span class="multiselect__option">
-                <slot name="maxElements">Maximum of {{ max }} options selected. First remove a selected option to select another.</slot>
+                <slot name="maxElements">Maximum of {{ max }} options selected. Remove a selected option first.</slot>
               </span>
             </li>
             <template v-if="!max || internalValue.length < max">
