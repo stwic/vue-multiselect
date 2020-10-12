@@ -6,7 +6,7 @@
     @blur="searchable ? false : deactivate()"
     @keydown.self.down.prevent="pointerForward()"
     @keydown.self.up.prevent="pointerBackward()"
-    @keypress.enter.tab.stop.self="addPointerElement($event)"
+    @keypress.enter.stop.self="addPointerElement($event)"
     @keyup.esc="deactivate()"
     class="multiselect"
     role="combobox"
